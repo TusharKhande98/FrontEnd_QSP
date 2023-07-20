@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+
+    <div>
+        <form action="">
+            <fieldset>
+                <legend align="center">Palindrome</legend>
+                
+                <label>Enter your name:- </label>
+                
+                <input type="text" name="nm" id="nm" autofocus placeholder="name">
+                <br><br>        
+
+                <input type="button" name="chk" value="Check-pal1" onclick="pal1()">
+                <input type="button" name="chk" value="Check-pal2" onclick="pal2()">
+                <p id="op"></p>
+                
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- Function - 1-->
+    <div>
+        <script type="text/javascript">
+            function pal1() 
+            {
+                let nm = document.getElementById("nm").value;
+                let rev = nm.split("").reverse().join("");
+                document.write(nm==rev? "Its a Palindrome":"Not a palindrome");
+            }
+            </script>
+    </div>
+    
+    <!-- Function - 2-->
+    <div>
+        <script type="text/javascript">
+            function pal2() 
+            {
+                let nm = document.getElementById("nm").value;
+                let rev = "";
+                for(let i=nm.length-1; i>=0; i--)
+                {
+                    rev = rev+nm.charAt(i);
+                    if(rev==nm)
+                        document.getElementById("op").innerHTML="It is Palindrome";
+                    else
+                        document.getElementById("op").innerHTML="It is not Palindrome";
+                }
+            }
+        </script>
+    </div>
+
+        
+</body>
+</html>
