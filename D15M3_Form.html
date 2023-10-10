@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+			margin: 0px;
+			font-family: sans-serif;
+		}
+		.mdiv
+		{
+			position: fixed;
+			top:0px;
+			left: 0px;
+			height: 100vh;
+			width: 100vw;
+			display: inline-flex;
+		}
+		.div1,.div2
+		{
+			width: 50%;
+			height: 100%;
+		}
+		.div1
+		{
+			background-image: url("BossBaby.jpg");
+			background-repeat: no-repeat;
+			background-size:100%;
+			background-position: center;
+		}
+		.lform
+		{
+			height: 300px;
+			width: 200px;
+			display: grid;
+			margin: 30% 25%;
+			/*border: 2px solid grey;*/
+			border-radius: 10px;
+			box-shadow: 20px 20px 20px lightgrey;
+			box-sizing: border-box;
+		}
+		input
+		{
+			width: 80%;
+			margin-left: 20px;
+			margin-top: 10px;
+			height: 30px;
+			border: none;
+			border-bottom: 2px solid black;
+			font-size: 17px;
+			font-weight: bolder;
+			color: darkgrey;
+		}
+		.lgn
+		{
+			font-size: 30px;
+			font-weight: bolder;
+			color: royalblue;
+			padding-bottom: 30px;
+		}
+		input:focus
+		{
+			outline: none;
+		}
+		.lk
+		{
+			padding: 20px;
+			padding-top: 30px;
+		}
+		.lk a
+		{
+			text-decoration: none;
+			color: black;
+			font-weight: bolder;
+		}
+		.lk a:hover
+		{
+			text-decoration: underline;
+		}
+		.btn
+		{
+			margin: 20px 20px;
+			border: none;
+			background-color: royalblue;
+			color: black;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="mdiv">
+		<div class="div1">
+		</div>
+		<div class="div2">
+			<div class="lform">
+				<form >
+					<h3 class="lgn" align="center">LOGIN</h3>
+					<input type="text" name="un" placeholder="USERNAME">
+					<input type="password" name="pass" placeholder="PASSWORD" style="margin-bottom: 15px;">
+					<span class="lk"><a href="#" >Forgot Password ?</a></span>
+					<input type="button" name="lgn" value="LOGIN" class="btn">
+					<span class="lk"><a href="#" >Create Account</a></span>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
