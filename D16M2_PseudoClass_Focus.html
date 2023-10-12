@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Focus</title>
+
+	<style type="text/css">
+	
+		input[type="text"]
+		{
+			border: none;
+			border-bottom: 2px solid darkred;
+		}
+		input[type="text"]:focus
+		{
+			outline:none;
+			/* after this border will not be seen when we focus */
+		}
+
+	</style>
+</head>
+<body>
+
+	<form> 
+		<fieldset>
+       		<legend>Log-in Form</legend>
+       		<label>UserName:- </label>
+       		<input type="text" name="un" >
+       		<br><br>
+       		<input type="submit" name="sbmt">
+       </fieldset>
+	</form>
+       
+</body>
+</html>
