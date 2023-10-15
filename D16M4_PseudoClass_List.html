@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo class - list</title>
+
+	<style type="text/css">
+
+		.p1::selection{color:white; background-color: rebeccapurple;}
+		.p2::selection{color:lightcoral; background-color: darkslategray;}
+		.p3::selection{color:white; background-color: green;}
+
+		.p1::first-line{ color: red;}
+		.p2::first-line{ color:tomato; font-style: italic;}
+		.p3::first-line{ color: darkslateblue; font-style: italic;}
+
+		
+		.p1::first-letter{font-size: 35px; font-weight: bolder; color: darkolivegreen;}
+		.p2::first-letter{font-size: 35px; font-weight: bolder; color: darkblue;}
+		.p3::first-letter{font-size: 35px; font-weight: bolder; color: darkorange;}
+		
+		li::marker
+		{
+			font-size: 20px;
+			color: red;
+		/* marker is for bullet point */
+		}
+
+	</style>
+</head>
+<body>
+	<p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam aliquid numquam architecto, dignissimos, consequuntur nobis reprehenderit saepe, vitae voluptate itaque cumque? Iure consectetur vero sequi quo minima totam quidem possimus explicabo reprehenderit fuga ea atque voluptatem in saepe vel, odit dignissimos quibusdam beatae fugit quia minus recusandae quam? Ullam corrupti accusamus neque animi molestiae odio ea architecto eaque quas corporis. Corrupti doloribus numquam laboriosam quia, beatae unde eaque libero cumque a adipisci maiores repudiandae labore optio velit culpa vel impedit itaque facere, cupiditate tempora. Ab excepturi, quia quaerat deserunt in beatae, quasi saepe perferendis at nemo quo impedit, quos praesentium?</p>
+
+	<p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum deserunt aliquam voluptatibus minima ipsa minus. Deserunt cupiditate, esse illum necessitatibus pariatur excepturi nesciunt fugit corrupti nam dolorum ea hic praesentium tempore reprehenderit quasi molestiae quisquam voluptate repudiandae dignissimos cum, distinctio corporis minus officiis dolorem. Odio voluptate voluptatibus, deleniti corporis sequi cupiditate? Dolorum magnam veniam eligendi pariatur ipsa voluptatum expedita suscipit, error repellendus autem architecto? Laboriosam beatae ipsa voluptate magnam est adipisci culpa vel labore inventore, delectus, voluptatibus ut commodi officia.</p>
+
+	<p class="p3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem aperiam exercitationem quis eveniet quo fugit, consequatur vero quam modi, perferendis velit veritatis a, quia tempora maiores asperiores. Et, animi tempore. Dolorem nostrum harum omnis consequatur dignissimos, reiciendis consequuntur voluptas corrupti cupiditate molestias quidem iusto iure labore voluptatum exercitationem adipisci ratione ipsum soluta molestiae laboriosam porro amet quisquam. Corrupti, inventore doloribus?</p>
+
+	<ul>
+		<h1>Subjects</h1>
+		<li>Java</li>
+		<li>Webtech</li>
+		<li>Selenium</li>
+	</ul>
+
+</body>
+</html>
