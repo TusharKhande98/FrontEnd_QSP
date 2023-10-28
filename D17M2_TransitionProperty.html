@@ -1,0 +1,48 @@
+<!-- OBSERVE IT LATER -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transition Property</title>
+	<style type="text/css">
+
+		div
+		{
+			height: 120px;
+			width: 210px;
+			font-size: 27px;
+			background-color: lightcoral;
+			transition-duration: 5s;
+			margin-top: 7px;
+		}
+		div:hover{transform: translate(1000px); background-color: darkslateblue;}
+		/* All div will be go & come back horizontally */
+		
+		.d2:hover{transition-timing-function: ease; background-color: darkslateblue;}
+		/* its a default property of trans. tim. func. so we cant see any diff. in this & above div */
+		
+		.d3:hover{transition-timing-function: in; background-color: darkslateblue;}
+		
+		.d4:hover{transition-timing-function: out; background-color: darkslateblue;}
+		
+		.d5:hover{transition-timing-function: ease-in-out; background-color: darkslateblue;}
+		
+		.d6:hover{transition-timing-function: linear; background-color: darkslateblue;}
+
+		.d7:hover{transform: translate(500px); background-color: darkslateblue;}
+	</style>
+
+</head>
+<body>
+
+	<div class="d1">transform: translate(1000px)</div>
+	<div class="d2">transition-timing-function: ease</div>
+	<div class="d3">transition-timing-function: in</div>
+	<div class="d4">transition-timing-function: out</div>
+	<div class="d5">transition-timing-function: ease-in-out</div>
+	<div class="d6">transition-timing-function: linear</div>
+	<div class="d7">transform: translate(500px)</div>
+
+</body>
+</html>
